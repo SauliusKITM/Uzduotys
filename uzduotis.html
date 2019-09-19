@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+	<meta charset="utf-8">
+	<title>Forma</title>
+</head>
+<body>
+	<form method=POST>
+		<h3>Duomenu informacija</h3>
+
+		<fieldset>
+			<label>El. pasto adresas:* </label>
+			<input type="email" name="email" required>
+		</fieldset>
+
+		<fieldset>
+			<label>Slaptazodis:* </label>
+			<input type="password" name="password" required>
+		</fieldset>
+
+		<fieldset>
+			<label>Patvirtinti slaptazodi:* </label>
+			<input type="password" name="repeat_password" required>
+		</fieldset>
+
+		<fieldset>
+			<input type="checkbox" checked>
+			<label>Sutinku su <a href="#" target="_blank">taisyklemis</a></label>
+		</fieldset>
+
+		<h3>Pasitikrinkite saskaitos adresa</h3>
+
+		<fieldset>
+			<label>Lytis:* </label>
+			<select>
+				<option>Moteris</option>
+				<option>Vyras</option>
+				<option>Kita</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<label>Vardas:* </label>	
+			<input type="text" name="name" required>
+		</fieldset>
+
+		<fieldset>
+			<label>Pavarde:* </label>
+			<input type="text" name="surname" required>
+		</fieldset>
+
+		<fieldset>
+			<label>Gatve, namo (buto) nr.:* </label>	
+			<input type="text" name="street" required>
+		</fieldset>
+
+		<fieldset>
+			<label>Pasto kodas:* </label>
+			<input type="text" name="postal" required>
+			<a href="https://www.post.lt/pasto-kodu-ir-adresu-paieska" target="_blank">Pasto kodu paieska</a>
+		</fieldset>
+
+		<fieldset>
+			<label>Miestas:* </label>
+			<input type="text" name="city" required>
+		</fieldset>
+
+		<fieldset>
+			<label>Salis:* </label>
+			<select>
+				<option selected disabled>-</option>
+				<option>Lietuva</option>
+				<option>Latvija</option>
+				<option>Estija</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<label>Telefonas:* </label>
+			<input type="number" name="phone" required> 
+		</fieldset>
+
+		<fieldset>
+			<label>Papildoma informacija: (Pavyzdziui varteliu, duru kodas)</label>
+			<textarea></textarea>
+		</fieldset>
+
+		<p>Prasome uzpildyti visus pazymetus laukus* </p>
+		<button type="submit">Registruotis</button>
+	</form>
+</body>
+</html>
